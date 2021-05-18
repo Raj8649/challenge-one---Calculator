@@ -1,0 +1,11 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "Simple calculator with math operations",
+  "main": "script.js",
+  "scripts": {
+    "compile-css": "sass --watch style.scss:style.css"
+  },
+  "author": "Rajesh Ramamurthy",
+  "license": "ISC"
+}

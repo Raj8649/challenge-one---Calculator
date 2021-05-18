@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator theme__white" id="calculator">
+            <div class="theme__capsule-holder">
+                <div class="theme__capsule">
+                    <input onclick="fnTheme()" type="checkbox" id="theme__checkbox" class="theme__checkbox" name="theme__checkbox">
+                    
+                    <span class="theme__capsule-white">
+                        <img src="sun.svg">
+                    </span>
+                    <span class="theme__capsule-dark">
+                        <img src="moon.svg">
+                    </span>
+                </div>
+            </div>
+            <div class="calculator__result">
+                <div class="calculator__applied"></div>
+                <div data-placeholder="0" id="calculator__display" class="calculator__display"></div>
+            </div>
+            <div class="calculator__pad">
+                <div class="pad__keys pad__keys-math2" onclick="fnPad('clear')">
+                    AC
+                </div>
+                <div class="pad__keys pad__keys-math2" onclick="fnPad('plusminus')">
+                    +/-
+                </div>
+                <div class="pad__keys pad__keys-math2" onclick="fnPad('percentage')">%</div>
+                <div class="pad__keys pad__keys-math" onclick="fnPad('division')">/</div>
+                <div class="pad__keys" onclick="fnPad('seven')">7</div>
+                <div class="pad__keys" onclick="fnPad('eight')">8</div>
+                <div class="pad__keys" onclick="fnPad('nine')">9</div>
+                <div class="pad__keys pad__keys-math" onclick="fnPad('multiplication')">*</div>
+                <div class="pad__keys" onclick="fnPad('four')">4</div>
+                <div class="pad__keys" onclick="fnPad('five')">5</div>
+                <div class="pad__keys" onclick="fnPad('six')">6</div>
+                <div class="pad__keys pad__keys-math" onclick="fnPad('minus')">-</div>
+                <div class="pad__keys" onclick="fnPad('one')">1</div>
+                <div class="pad__keys" onclick="fnPad('two')">2</div>
+                <div class="pad__keys" onclick="fnPad('three')">3</div>
+                <div class="pad__keys pad__keys-math" onclick="fnPad('plus')">+</div>
+                <div class="pad__keys pad__keys-two" onclick="fnPad('zero')">0</div>
+                <div class="pad__keys" onclick="fnPad('dot')">.</div>
+                <div class="pad__keys pad__keys-math" onclick="fnPad('result')">=</div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+</html>
